@@ -54,21 +54,23 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
                         {...register("assignedTo", { required: true })}
                     >
                         <option value="">Select a person</option>
-                        <option value="Person 1">Person 1</option>
-                        <option value="Person 2">Person 2</option>
+                        <option value="Mir Hussain">Mir Hussain</option>
+                        <option value="Rahat">Rahat</option>
+                        <option value="Rashed">Rashed</option>
                         {/* Add more options as needed */}
                     </select>
                 </div>
                 <div className="flex flex-col gap-3">
-                    <label htmlFor="priority">Priority</label>
+                    <label htmlFor="priority">priority</label>
                     <select
                         className="w-full rounded-md"
                         id="priority"
                         {...register("priority", { required: true })}
                     >
                         <option value="">Select a priority</option>
-                        <option value="High">High</option>
-                        <option value="Low">Low</option>
+                        <option value="high">high</option>
+                        <option value="medium">medium</option>
+                        <option value="low">low</option>
                     </select>
                 </div>
                 <div className="flex justify-end mt-4 space-x-4">
